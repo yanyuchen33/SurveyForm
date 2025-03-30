@@ -4,7 +4,9 @@ function calculate() {
     let numb = document.getElementById('b').value;
     let num1 =parseFloat(numa);
     let num2 =parseFloat(numb);
-
+if (isNaN(num1) || isNaN(num2)) {
+  console.error("请输入有效的数字");
+}
     // 进行加法运算
     let result = num1+num2;
     alert(result);
